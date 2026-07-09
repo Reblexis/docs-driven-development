@@ -21,13 +21,17 @@ From that, everything else follows:
 
 How documentation should be structured, how conformance is checked, who may write which docs, how existing projects convert — all left open. Those answers are more specific designs derived from this idea: written down, owned by each project, and free to differ between projects. Adopting docs-driven development is itself the same move as using it — write down what your thing should be, and let agents make reality match.
 
-## For AI agents
-
-The [`skill/`](skill/SKILL.md) folder is an installable skill — one derived practice of this idea, not part of it. Copy or symlink it into an agent's skills directory and the agent knows how to operate docs-first.
-
 ## This repo follows its own standard
 
-This README is the source of truth for this repository. Everything else in it — the skill, and anything added later — is a derived artifact that exists to satisfy this document, and is wrong wherever it disagrees with it. Changes to what this repo means happen here first.
+This README is the source of truth for this repository. Everything else in it — including everything below this line — is a derived artifact that exists to satisfy this document, and is wrong wherever it disagrees with it. Changes to what this repo does happen here first.
+
+The repo ships exactly one derived artifact: an installable skill for AI agents, at [`skill/`](skill/SKILL.md). The skill must:
+
+- teach an agent to operate inside a docs-driven repo according to this document — nothing it says may contradict the idea above;
+- present its operating procedures as one derived practice of the idea, not as the idea itself, deferring to each project's own docs where they differ;
+- be installable by copying or symlinking the `skill/` folder into an agent's skills directory.
+
+Anything the skill says beyond this specification is its implementer's freedom.
 
 ## License
 
