@@ -21,6 +21,8 @@ From that, everything else follows:
 
 How documentation should be structured, how conformance is checked, who may write which docs, how existing projects convert — all left open. Those answers are more specific designs derived from this idea: written down, owned by each project, and free to differ between projects. Adopting docs-driven development is itself the same move as using it — write down what your thing should be, and let agents make reality match.
 
+One example of such a derived design: [ddd-practice](https://github.com/Reblexis/ddd-practice) — adopting DDD in existing projects and developing with AI agents.
+
 ## This repo follows its own standard
 
 This README is the source of truth for this repository. Everything else in it — including everything below this line — is a derived artifact that exists to satisfy this document, and is wrong wherever it disagrees with it. Changes to what this repo does happen here first.
