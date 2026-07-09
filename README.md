@@ -12,6 +12,7 @@ This makes natural language a programming language with an adjustable determinis
 
 From that, everything else follows:
 
+- Docs are always as minimal as possible: they describe only what was explicitly specified. Everything not written is delegated, not forgotten.
 - The docs are the source of truth. Code exists to satisfy them; where they disagree, the code is wrong.
 - To change what the software does, change the docs. The code is then made to conform.
 - Ambiguity below the precision of the docs is not error but deliberate freedom — the implementer decides.
