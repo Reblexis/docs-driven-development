@@ -13,9 +13,9 @@ description: >
 # Docs-driven development
 
 The core idea: https://github.com/Reblexis/docs-driven-development
-(this skill folder ships inside that repo; the README there is the whole
-idea). This skill is one derived practice of that idea, not part of it —
-projects may operate differently, and their own docs win.
+(this skill folder ships inside that repo; `docs/idea.md` there is the
+whole idea). This skill is one derived practice of that idea, not part
+of it — projects may operate differently, and their own docs win.
 
 The rules, in brief: docs are the source of truth and code exists to
 satisfy them; where they disagree, the code is wrong. Behavior changes
@@ -47,7 +47,8 @@ doc edits.
 1. **Declare.** Add a short "docs govern" statement to the repo's most
    authoritative doc (create one if none exists): docs are the source of
    truth, code is derived, behavior changes start as doc changes. Link
-   the methodology repo.
+   the methodology repo. Governing docs live in `./docs`, clearly
+   separated; the root README is at most an entry point.
 2. **Bootstrap the hierarchy** from existing code plus the owner's
    intent. Usually: a vision doc (why this exists, principles), a
    contracts doc (interfaces, protocols, invariants others depend on),
