@@ -25,15 +25,9 @@ One example of such a derived design: [ddd-practice](https://github.com/Reblexis
 
 ## This repo follows its own standard
 
-This README is the source of truth for this repository. Everything else in it — including everything below this line — is a derived artifact that exists to satisfy this document, and is wrong wherever it disagrees with it. Changes to what this repo does happen here first.
+This README is the source of truth for this repository. Everything else in it is a derived artifact that exists to satisfy this document, and is wrong wherever it disagrees with it. Changes to what this repo does happen here first.
 
-The repo ships exactly one derived artifact: an installable skill for AI agents, at [`skill/`](skill/SKILL.md). The skill must:
-
-- teach an agent to operate inside a docs-driven repo according to this document — nothing it says may contradict the idea above;
-- present its operating procedures as one derived practice of the idea, not as the idea itself, deferring to each project's own docs where they differ;
-- be installable by copying or symlinking the `skill/` folder into an agent's skills directory.
-
-Anything the skill says beyond this specification is its implementer's freedom.
+The repo ships an installable skill for AI agents, at [`skill/`](skill/SKILL.md): it describes how to adopt and operate docs-driven development, consistently with this document, and installs by copying the folder into an agent's skills directory. Everything else about the skill is its implementation.
 
 ## License
 
