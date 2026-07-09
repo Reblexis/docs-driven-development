@@ -48,7 +48,8 @@ doc edits.
    authoritative doc (create one if none exists): docs are the source of
    truth, code is derived, behavior changes start as doc changes. Link
    the methodology repo. Governing docs live in `./docs`, clearly
-   separated; the root README is at most an entry point.
+   separated; the root README is a derived summary of what the repo is
+   about and contains, strictly per the docs, linking into `./docs`.
 2. **Bootstrap the hierarchy** from existing code plus the owner's
    intent. Usually: a vision doc (why this exists, principles), a
    contracts doc (interfaces, protocols, invariants others depend on),
