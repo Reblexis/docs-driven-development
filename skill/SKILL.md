@@ -12,9 +12,10 @@ description: >
 
 # Docs-driven development
 
-Full methodology: https://github.com/Reblexis/docs-driven-development
+The core idea: https://github.com/Reblexis/docs-driven-development
 (this skill folder ships inside that repo; the README there is the whole
-methodology, `docs/` is commentary).
+idea). This skill is one derived practice of that idea, not part of it —
+projects may operate differently, and their own docs win.
 
 The rules, in brief: docs are the source of truth and code exists to
 satisfy them; where they disagree, the code is wrong. Behavior changes

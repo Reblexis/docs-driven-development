@@ -2,29 +2,28 @@
 
 Software whose source is documentation.
 
-Code still exists — but as a derived artifact, written and maintained by AI agents, never by humans. Humans write docs at whatever level of abstraction they choose; agents make reality match them.
+Code still exists — but as a derived artifact, produced and maintained by AI agents. Humans write documentation at whatever level of abstraction they choose; agents make reality match it.
 
 ## The idea
 
-A programming language forces you to decide everything: every name, every data structure, every edge case — including the thousands of decisions you have no opinion about. Documentation as source inverts this. You write precisely where behavior matters, and stay abstract where it doesn't. Where you are precise, behavior is pinned. Where you are abstract, you have deliberately delegated the decision.
+A programming language forces you to decide everything: every name, every structure, every edge case — including the thousands of things you have no opinion about. Documentation as source inverts this. You write precisely where behavior matters to you, and stay abstract where it doesn't. Where you are precise, behavior is pinned. Where you are abstract, you have deliberately delegated the decision.
 
-This makes natural language a programming language with an adjustable determinism dial — deterministic exactly up to the level you choose, and free below it.
+This makes natural language a programming language with an adjustable determinism dial: deterministic exactly up to the level you choose, and free below it.
 
-## The rules
+From that, everything else follows:
 
-1. **Docs are the source of truth.** Code exists only to satisfy them. Where code and docs disagree, the code is wrong.
-2. **Behavior changes start as doc changes.** To change what the software does, change the doc first, then conform the code.
-3. **Docs are hierarchical and minimal.** Vision at the root; precision added only where divergence is costly. Interfaces and contracts between components deserve the most precision; internals stay abstract.
-4. **Ambiguity below the specified precision is freedom, not error.** Implementers decide and move on.
-5. **Ambiguity that causes divergence is a doc bug.** Fix it by tightening the specific sentence that was underspecified — nothing more.
+- The docs are the source of truth. Code exists to satisfy them; where they disagree, the code is wrong.
+- To change what the software does, change the docs. The code is then made to conform.
+- Ambiguity below the precision of the docs is not error but deliberate freedom — the implementer decides.
+- When ambiguity produces divergence that matters, the docs were too loose exactly there, and the fix is precision exactly there.
 
-That's the whole methodology. Everything else is practice.
+## What this deliberately does not say
 
-## Going deeper
+How documentation should be structured, how conformance is checked, who may write which docs, how existing projects convert — all left open. Those answers are more specific designs derived from this idea: written down, owned by each project, and free to differ between projects. Adopting docs-driven development is itself the same move as using it — write down what your thing should be, and let agents make reality match.
 
-- [Method](docs/method.md) — the model in depth: layers, the determinism dial, boundaries, drift, and how code stays aligned.
-- [Adoption](docs/adoption.md) — how to adopt this in a new or existing project.
-- [Skill](skill/SKILL.md) — an installable skill for AI agents: copy or symlink `skill/` into an agent's skills directory and it knows how to adopt and operate this.
+## For AI agents
+
+The [`skill/`](skill/SKILL.md) folder is an installable skill — one derived practice of this idea, not part of it. Copy or symlink it into an agent's skills directory and the agent knows how to operate docs-first.
 
 ## License
 
