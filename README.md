@@ -24,6 +24,7 @@ That's the whole methodology. Everything else is practice.
 
 - [Method](docs/method.md) — the model in depth: layers, the determinism dial, boundaries, drift, and how code stays aligned.
 - [Adoption](docs/adoption.md) — how to adopt this in a new or existing project.
+- [Skill](skill/SKILL.md) — an installable skill for AI agents: copy or symlink `skill/` into an agent's skills directory and it knows how to adopt and operate this.
 
 ## License
 
