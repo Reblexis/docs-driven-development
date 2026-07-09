@@ -10,7 +10,7 @@ This makes natural language a programming language with an adjustable determinis
 
 From that, everything else follows:
 
-- Docs are always as minimal as possible: they describe only what was explicitly specified. Everything not written is delegated, not forgotten.
+- Docs are always as minimal as possible: they describe only what was explicitly specified. Everything not written is delegated, not forgotten. Where something is already specified elsewhere, a doc references the original instead of duplicating it; only implementation may duplicate.
 - The docs live in `./docs`, clearly separated from everything derived. The root README is itself a derived artifact: it describes what the repo is about, what it contains and where — strictly according to the docs. It summarizes and links into `./docs` for detail; it specifies nothing new and misdescribes nothing that exists.
 - The docs are the source of truth. Code exists to satisfy them; where they disagree, the code is wrong.
 - To change what the software does, change the docs. The code is then made to conform.
