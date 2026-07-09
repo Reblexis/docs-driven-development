@@ -25,6 +25,10 @@ How documentation should be structured, how conformance is checked, who may writ
 
 The [`skill/`](skill/SKILL.md) folder is an installable skill — one derived practice of this idea, not part of it. Copy or symlink it into an agent's skills directory and the agent knows how to operate docs-first.
 
+## This repo follows its own standard
+
+This README is the source of truth for this repository. Everything else in it — the skill, and anything added later — is a derived artifact that exists to satisfy this document, and is wrong wherever it disagrees with it. Changes to what this repo means happen here first.
+
 ## License
 
 [MIT](LICENSE)
